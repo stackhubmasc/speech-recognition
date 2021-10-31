@@ -6,7 +6,7 @@ const getRandomNumber = () => {
 };
 
 const randomNum = getRandomNumber();
-console.log(randomNum);
+
 
 window.SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
