@@ -61,7 +61,7 @@ const checkNumber = (msg) => {
   }
 };
 
-// Speak result
+// Speak result 
 recognition.addEventListener("result", onSpeak);
 
 // End SR service
