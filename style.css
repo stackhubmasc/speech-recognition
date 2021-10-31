@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-background: #000119;
+  --stroke-width: calc(1em / 16);
+  --font-size: 10rem;
+  --font-weight: 700;
+  --letter-spacing: calc(1em / 8);
+}
+
 body {
-  background: #2f3542
-    url("./asset/blurry-gradient-haikei.png")
-    no-repeat center/cover;
+  background: var(--color-background);
   height: 100vh;
   color: #fff;
   overflow: hidden;
@@ -23,6 +29,28 @@ body {
 h1,
 h3 {
   margin-bottom: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.title {
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    #09f1b8,
+    #00a2ff,
+    #ff00d2,
+    #fed90f
+  );
+  color: var(--color-background);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  letter-spacing: var(--letter-spacing);
+  padding: calc(--stroke-width / 2);
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: var(--stroke-width);
 }
 
 p {
